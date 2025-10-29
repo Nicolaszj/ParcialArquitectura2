@@ -1,6 +1,6 @@
 # Task Management API - Examen de Arquitectura de Software
 
-**Estudiante:** Nicolás  
+**Estudiante:** Nicolás
 **Fecha:** 2025-10-29  
 **Tecnologías:** Python 3.11, FastAPI, Docker
 

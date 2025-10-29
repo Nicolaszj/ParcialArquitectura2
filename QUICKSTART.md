@@ -1,6 +1,6 @@
 # Quick Start Guide - Task Management API
 
-## 🚀 Inicio Rápido con Docker (Recomendado)
+## Inicio Rápido con Docker (En mi pc genera problemas, pero sería el ideal)
 
 ### Opción 1: Un solo comando
 
@@ -31,7 +31,7 @@ docker build -t task-api . && docker run -p 8000:8000 task-api
 4. **Acceder a la documentación:**
    - Abrir navegador en: http://localhost:8000/docs
 
-## 🧪 Probar la API
+## Probar la API
 
 ### Crear una tarea
 
@@ -55,19 +55,19 @@ curl -X PUT http://localhost:8000/tasks/{id} \
   -d '{"status": "done"}'
 ```
 
-## 📊 Documentación Interactiva
+## Documentación Interactiva
 
 - **Swagger UI:** http://localhost:8000/docs
 - **ReDoc:** http://localhost:8000/redoc
 
-## 🛑 Detener la aplicación
+## Detener la aplicación
 
 ```bash
 docker stop task-api
 docker rm task-api
 ```
 
-## 🐍 Ejecutar sin Docker (Desarrollo local)
+## Ejecutar sin Docker (Desarrollo local)
 
 1. **Crear entorno virtual:**
 
@@ -87,25 +87,30 @@ docker rm task-api
    python -m uvicorn app.adapters.http.fastapi_app:app --reload
    ```
 
-## ✅ Verificación Rápida
+## Verificación Rápida
 
 Endpoints para probar:
 
-1. ✅ Health: `GET http://localhost:8000/health`
-2. ✅ Crear tarea: `POST http://localhost:8000/tasks`
-3. ✅ Listar tareas: `GET http://localhost:8000/tasks`
-4. ✅ Ver tarea: `GET http://localhost:8000/tasks/{id}`
-5. ✅ Actualizar: `PUT http://localhost:8000/tasks/{id}`
-6. ✅ Eliminar: `DELETE http://localhost:8000/tasks/{id}`
+1. Health: `GET http://localhost:8000/health`
+2. Crear tarea: `POST http://localhost:8000/tasks`
+3. Listar tareas: `GET http://localhost:8000/tasks`
+4. Ver tarea: `GET http://localhost:8000/tasks/{id}`
+5. Actualizar: `PUT http://localhost:8000/tasks/{id}`
+6. Eliminar: `DELETE http://localhost:8000/tasks/{id}`
 
-## 🎯 Patrones y Principios Implementados
+## Patrones y Principios Implementados
 
-- ✅ **Repository Pattern** - Abstracción de persistencia
-- ✅ **Factory Pattern** - Creación centralizada de entidades
-- ✅ **Dependency Injection** - Desacoplamiento de componentes
-- ✅ **SOLID Principles** - Código mantenible y extensible
-- ✅ **Clean Architecture** - Separación en capas
+- **Repository Pattern** - Abstracción de persistencia
+- **Factory Pattern** - Creación centralizada de entidades
+- **Dependency Injection** - Desacoplamiento de componentes
+- **SOLID Principles** - Código mantenible y extensible
+- **Clean Architecture** - Separación en capas
 
-## 📚 Más Información
+## Evidencias
+
+- ![API Funcionando](image.png)
+- **Nota:** La captura de Docker no está disponible debido a problemas de virtualización en la máquina local (pantalla negra al activar virtualización en BIOS).
+
+## Más Información
 
 Ver `README.md` para documentación completa de arquitectura y diseño.
