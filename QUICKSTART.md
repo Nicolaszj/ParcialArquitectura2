@@ -106,11 +106,6 @@ Endpoints para probar:
 - **SOLID Principles** - Código mantenible y extensible
 - **Clean Architecture** - Separación en capas
 
-## Evidencias
-
-- ![API Funcionando](image.png)
-- **Nota:** La captura de Docker no está disponible debido a problemas de virtualización en la máquina local (pantalla negra al activar virtualización en BIOS).
-
 ## Más Información
 
 Ver `README.md` para documentación completa de arquitectura y diseño.

@@ -294,3 +294,8 @@ La API estará disponible en: http://localhost:8000
 - Todos los endpoints incluyen manejo de errores apropiado
 - La API sigue el estándar REST con códigos HTTP correctos
 - El código incluye documentación y comentarios explicativos
+
+## Evidencias
+
+- ![API Funcionando](image.png)
+- **Nota:** La captura de Docker no está disponible debido a problemas de virtualización en la máquina local (pantalla negra al activar virtualización en BIOS).
